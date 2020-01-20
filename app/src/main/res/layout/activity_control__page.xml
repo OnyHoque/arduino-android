@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.development.hoque.arduinoandroidremote.Control_Page">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1000dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/toolbar1"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Last sent Value:"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_lastVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_toRightOf="@+id/textView2"
+            android:text="Null"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/text_lastVal"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter value here"
+            android:inputType="text"
+            android:layout_below="@+id/textView7"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editText"
+            android:layout_alignBottom="@+id/editText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="5dp"
+            android:text="Terminal:"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b_Send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/editText"
+            android:layout_marginRight="5dp"
+            android:text="Send"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/editText"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView9"
+            android:layout_centerHorizontal="true"
+            android:text="RC Controls"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/textView10"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/b_ON"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView11"
+            android:layout_marginLeft="5dp"
+            android:text="ON"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b_OFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView11"
+            android:layout_marginRight="5dp"
+            android:text="OFF"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b_Forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView11"
+            android:layout_centerHorizontal="true"
+            android:text="Forward" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/b_Forward"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/b_Backward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView12"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="Backward" />
+
+        <Button
+            android:id="@+id/b_Left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/b_Backward"
+            android:layout_alignBottom="@+id/b_Backward"
+            android:layout_toLeftOf="@+id/b_Backward"
+            android:layout_toStartOf="@+id/b_Backward"
+            android:text="Left" />
+
+        <Button
+            android:id="@+id/b_Right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView12"
+            android:layout_toEndOf="@+id/b_Backward"
+            android:layout_toRightOf="@+id/b_Backward"
+            android:text="Right" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/b_Backward"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/b_Configure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/b_OFF"
+            android:layout_alignRight="@+id/b_OFF"
+            android:layout_below="@+id/textView13"
+            android:text="Configure Button"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/b_Configure"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Slider"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView14"
+            android:layout_centerHorizontal="true" />
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            style="@style/Widget.AppCompat.SeekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/b_Seekbar1"
+            android:layout_alignLeft="@+id/b_ON"
+            android:layout_alignStart="@+id/b_ON"
+            android:layout_marginBottom="14dp"
+            android:max="250"
+            android:layout_toLeftOf="@+id/b_Seekbar1"
+            android:layout_toStartOf="@+id/b_Seekbar1" />
+
+        <Button
+            android:id="@+id/b_Seekbar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/b_Right"
+            android:layout_alignStart="@+id/b_Right"
+            android:layout_below="@+id/textView15"
+            android:layout_toEndOf="@+id/editText"
+            android:text="Configure"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/b_Seekbar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/b_Seekbar1"
+            android:layout_alignLeft="@+id/b_Seekbar1"
+            android:layout_alignRight="@+id/b_Seekbar1"
+            android:layout_alignStart="@+id/b_Seekbar1"
+            android:layout_below="@+id/b_Seekbar1"
+            android:text="Configure"
+            android:textAllCaps="false" />
+
+        <SeekBar
+            android:id="@+id/seekBar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/b_Seekbar2"
+            android:layout_marginBottom="12dp"
+            android:layout_toLeftOf="@+id/b_Seekbar2"
+            android:layout_alignLeft="@+id/seekBar1"
+            android:layout_alignStart="@+id/seekBar1" />
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">"Arduino Android Remote "</string>
+    <string name="PREF_FILE">APP_PREF_FILE</string>
+    <string name="FORWARD">FILE_FORWARD</string>
+    <string name="BACKWARD">FILE_BACKWARD</string>
+    <string name="LEFT">FILE_LEFT</string>
+    <string name="RIGHT">FILE_RIGHT</string>
+    <string name="BUTTON_ON">FILE_ON</string>
+    <string name="BUTTON_OFF">FILE_OFF</string>
+</resources>
